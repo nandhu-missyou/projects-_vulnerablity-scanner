@@ -1,0 +1,43 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-16 05:14 EAT
+Nmap scan report for Dear-PC (192.168.43.11)
+Host is up (0.0020s latency).
+Not shown: 65528 filtered tcp ports (no-response)
+PORT      STATE SERVICE      VERSION
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Windows 7 Home Premium 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+554/tcp   open  rtsp?
+2869/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5357/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Service Unavailable
+10243/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 12h19m58s, deviation: 4h02m30s, median: 9h59m57s
+|_nbstat: NetBIOS name: DEAR-PC, NetBIOS user: <unknown>, NetBIOS MAC: 0800271cb95b (Oracle VirtualBox virtual NIC)
+| smb2-security-mode: 
+|   210: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows 7 Home Premium 7601 Service Pack 1 (Windows 7 Home Premium 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: Dear-PC
+|   NetBIOS computer name: DEAR-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-04-16T05:18:42-07:00
+| smb2-time: 
+|   date: 2023-04-16T12:18:44
+|_  start_date: 2023-04-16T11:32:41
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 291.72 seconds
+-------------------------------------------------------------------
+Press any key to continue...
+
